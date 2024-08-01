@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WKB to WKT Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wellknown/0.5.0/wellknown.min.js"></script>
+</head>
+<body>
+    <h1>WKB to WKT Converter</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" accept=".csv">
+        <br><br>
+        <label for="columnName">Column name containing WKB data:</label>
+        <input type="text" id="columnName" required>
+        <br><br>
+        <button type="submit">Convert</button>
+    </form>
+    <div id="downloadLink"></div>
+    <script src="script.js"></script>
+</body>
+</html>
